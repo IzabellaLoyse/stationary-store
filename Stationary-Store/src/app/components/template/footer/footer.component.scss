@@ -1,0 +1,20 @@
+.footer {
+  align-items: center;
+  background-color: rgb(234, 234, 234);
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+
+  span {
+    color: rgb(37, 36, 36);
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+
+.icon {
+  color: rgb(248, 12, 12);
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}

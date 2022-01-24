@@ -1,16 +1,17 @@
 .header {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: rgb(5, 51, 255);
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__group {
-  padding-left: 2rem;
-  display: flex;
   align-items: center;
+  display: flex;
+  padding-left: 2rem;
 
   i {
+    font-size: 1.5rem;
     padding-right: 0.5rem;
   }
 }
