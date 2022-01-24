@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(5, 51, 255);
+}
+
+.header__group {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+
+  i {
+    padding-right: 0.5rem;
+  }
+}
