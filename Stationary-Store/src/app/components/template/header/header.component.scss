@@ -2,13 +2,16 @@
   align-items: center;
   background-color: rgb(5, 51, 255);
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .header__group {
-  align-items: center;
-  display: flex;
   padding-left: 2rem;
+
+  a {
+    font-size: 1.2rem;
+  }
 
   i {
     font-size: 1.5rem;
