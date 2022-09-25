@@ -23,6 +23,8 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ColorElementDirective } from './directives/color-element.directive';
+import { MyForDirective } from './directives/my-for.directive';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { ProductReadComponent } from './components/product/product-read/product-
     ProductCrudComponent,
     ProductCreateComponent,
     ProductReadComponent,
+    ColorElementDirective,
+    MyForDirective,
   ],
   imports: [
     BrowserModule,

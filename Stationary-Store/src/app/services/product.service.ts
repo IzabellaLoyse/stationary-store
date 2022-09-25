@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
-import { IProduct } from '../components/product/product.model';
+import { IProduct } from '../components/product/interfaces/product.model';
 
 @Injectable({
   providedIn: 'root',
@@ -20,11 +20,11 @@ export class ProductService {
     });
   }
 
-  createProduct(product: IProduct): Observable<IProduct> {
+  public createProduct(product: IProduct): Observable<IProduct> {
     return this.http.post<IProduct>(this.URL, product);
   }
 
-  readProducts(): Observable<IProduct[]> {
+  public readProducts(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(this.URL);
   }
 }
