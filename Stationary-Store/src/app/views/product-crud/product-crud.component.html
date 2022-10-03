@@ -1,5 +1,14 @@
-<button class="btn" mat-raised-button (click)="navigateToProductCreate()" color="primary">
-  Novo Produto
-</button>
+<mat-card class="crud mat-elevation-z3">
+  <mat-card-title class="crud__title">Criar novo produto </mat-card-title>
+
+  <button
+    class="btn"
+    mat-raised-button
+    (click)="navigateToProductCreate()"
+    color="primary"
+  >
+    Novo Produto
+  </button>
+</mat-card>
 
 <app-product-read></app-product-read>

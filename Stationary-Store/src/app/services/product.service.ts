@@ -27,4 +27,8 @@ export class ProductService {
   public readProducts(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(this.URL);
   }
+
+  public deleteProduct(id: number): Observable<IProduct> {
+    return this.http.delete<IProduct>(`${this.URL}/${id}`);
+  }
 }
