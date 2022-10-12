@@ -22,7 +22,7 @@ export class ProductCreateComponent implements OnInit {
     });
   }
 
-  public cancel(): void {
+  public onCancel(): void {
     this.router.navigate(['/products']);
   }
 }
