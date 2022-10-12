@@ -2,3 +2,15 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+
+.edit {
+  margin-right: 0.5rem;
+}
+
+.edit > i {
+  color: rgb(37, 112, 209);
+}
+
+.delete > i {
+  color: rgb(33, 62, 189);
+}

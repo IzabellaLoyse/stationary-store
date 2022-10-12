@@ -9,7 +9,7 @@ import { IProduct } from '../interfaces/product.model';
 })
 export class ProductReadComponent implements OnInit {
   public products: IProduct[] = [];
-  public displayedColumns = ['id', 'name', 'price'];
+  public displayedColumns = ['id', 'name', 'price', 'action'];
 
   constructor(private productService: ProductService) {}
 
