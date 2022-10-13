@@ -1,0 +1,34 @@
+<mat-card>
+  <mat-card-title>Novo Produto</mat-card-title>
+
+  <form class="form">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome"
+        [(ngModel)]="product.name"
+        name="name"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Preco (R$)"
+        [(ngModel)]="product.price"
+        name="price"
+      />
+    </mat-form-field>
+  </form>
+
+  <button
+    class="btn"
+    mat-raised-button
+    (click)="updateProduct()"
+    color="primary"
+  >
+    Atualizar
+  </button>
+
+  <button class="btn" mat-raised-button (click)="onCancel()">Cancelar</button>
+</mat-card>

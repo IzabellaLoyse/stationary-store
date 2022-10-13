@@ -28,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { ColorElementDirective } from './directives/color-element.directive';
 import { MyForDirective } from './directives/my-for.directive';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 
 registerLocaleData(localePt);
 
@@ -43,6 +44,7 @@ registerLocaleData(localePt);
     ProductReadComponent,
     ColorElementDirective,
     MyForDirective,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,

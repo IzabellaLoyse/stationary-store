@@ -28,7 +28,15 @@ export class ProductService {
     return this.http.get<IProduct[]>(this.URL);
   }
 
-  public deleteProduct(id: number): Observable<IProduct> {
+  public readProductById(id: string | null): Observable<IProduct> {
+    return this.http.get<IProduct>(`${this.URL}/${id}`);
+  }
+
+  public updateProduct(product: IProduct): Observable<IProduct> {
+    return this.http.put<IProduct>(`${this.URL}/${product.id}`, product);
+  }
+
+  public deleteProduct(id: string): Observable<IProduct> {
     return this.http.delete<IProduct>(`${this.URL}/${id}`);
   }
 }
